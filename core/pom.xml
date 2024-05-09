@@ -7,6 +7,9 @@
         <artifactId>time-tracker-parent</artifactId>
         <version>0.5.0-SNAPSHOT</version>
     </parent>
+    <properties>
+    <org.springframework.version>5.2.8.RELEASE</org.springframework.version>
+    </properties>
 
     <artifactId>time-tracker-core</artifactId>
     <packaging>jar</packaging>
@@ -29,9 +32,9 @@
 
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-            <scope>test</scope>
+        <artifactId>spring-context</artifactId>
+        <version>${org.springframework.version}</version>
+        <scope>Test</scope>
         </dependency>
         <!-- End Testing -->
     </dependencies>
